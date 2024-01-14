@@ -1,0 +1,64 @@
+.container{
+    height: 200vh;
+    display: grid;
+  
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-rows: auto; */
+    grid-template-areas: "one two two"
+     "one three four" 
+     "one five five"
+     "one six seven"
+     "eight eight eight";
+
+
+}
+
+.item0{
+    background-color: green;
+    color: white;
+    grid-area: one;
+    border: 1px solid red;
+    border-color: red;
+}
+.item1{
+    background-color: green;
+    color: white;
+    grid-area: two;
+    border: 1px solid red;
+}
+.item2{
+    background-color: green;
+    color: white;
+    grid-area: three;
+    border: 1px solid red;
+}
+.item3{
+    background-color: green;
+    color: white;
+    grid-area: four;
+    border: 1px solid red;
+}
+.item4{
+    background-color: green;
+    color: white;
+    grid-area: five;
+    border: 1px solid red;
+}
+.item5{
+    background-color: green;
+    color: white;
+    grid-area: six;
+    border: 1px solid red;
+}
+.item6{
+    background-color: green;
+    color: white;
+    grid-area: seven;
+    border: 1px solid red;
+}
+.item7{
+    background-color: green;
+    color: white;
+    grid-area: eight;
+    border: 1px solid red;
+}

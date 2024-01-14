@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <style>
+        /* Common styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f7f3f3;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+    /* Additional styles for desktops */
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    /* Additional styles for tablets */
+    nav a {
+        padding: 8px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 599px) {
+    /* Additional styles for mobile devices */
+    nav {
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.responsive-table th,
+.responsive-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .responsive-table th,
+    .responsive-table td {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 599px) {
+    .responsive-table th,
+    .responsive-table td {
+        font-size: 12px;
+    }
+}
+
+.widget-container {
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width based on your design */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Add other common styles as needed */
+}
+
+.widget-container img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* To remove any default spacing below the image */
+    margin: 0 auto; /* Center the image within the container */
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .widget-container {
+        max-width: 80%; /* Adjust the maximum width for tablets */
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 599px) {
+    .widget-container {
+        padding: 15px; /* Adjust the padding for mobile devices */
+    }
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    
+
+    <header>
+        <img src="/images/school.PNG" alt="" height="75px" width="300px">
+        <h1>School Name</h1>
+        <p>Welcome to our school website!</p>
+    </header>
+
+    <nav>
+        <ul style="list-style-type: none;">
+            <li><a href="about">ABOUT</a></li>
+                    <li><a href="academic">ACADEMIC</a></li>
+                    <li><a href="non academic">NON ACADEMIC</a></li>
+                    <li><a href="kindergarten">KINDERGARTEN</a></li>
+                    <li><a href="general">GENERAL</a></li>
+                    <li><a href="gallery">GALLERY</a></li>
+                    <li><a href="mandatory public disclosure">MANDATORY PUBLIC DISCLOSURE</a></li>
+                    <li><a href="contact">CONTACT</a></li> 
+                    <marquee behavior="left" direction="" style="background-color: orangered;">Devagiri CMI Public School wishes you a happy and prosperous New Year! 
+                    </marquee>
+        </ul>
+        
+    </nav>
+    
+
+    <main>
+        <section id="about">
+            <table class="responsive-table" style="padding-left: 40px; padding-block: 40px; color: rgb(5, 5, 51); ">
+                <tr style="padding-left: 100px; font-size: 30px;">
+                    <th style="padding-left: 20px;">Welcome to DCMIPS!</th>
+                    <th style="padding-left: 20px;" rowspan="2"><img src="images/sc3.PNG" alt=""></th>
+                    <th style="padding-left: 20px;">Press Release</th>  
+                </tr>
+                <tr style="font-size: 20px; ">
+                    <td style="padding-left: 20px;">Envisioned and established by the Fathers of the St. 
+                        Thomas Province of the Carmelites of Mary 
+                        Immaculate (CMI), Devagiri CMI Public School is a co- 
+                        educational English Medium School following the CBSE syllabus. This minority educational institution is run by St. Joseph’s Monastery, Devagiri, where…</td>
+                    <td style="padding-left: 20px;">According to Henry Ward Beecher, “The newspaper is a greater treasure
+                        to the people than uncounted millions of gold.” It is a far greater 
+                        treasure for the school when the students appear in the newspapers for all their involvements and great achievements. 
+                        We celebrate them as <br>
+                        they make a significant…</td>  
+                </tr>
+            </table>
+        </section>
+
+        <section class="widget-container" id="academic">
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">Calendar</h2>
+            <img src="images/calender.png.crdownload" alt="" width="200px" height="200px">
+        </div>
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">News & Updates</h2> 
+            </div>
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">Achievers</h2>
+            </div>
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">Notice Board</h2> 
+            </div>
+        </section>
+
+        <section class="widget-container" id="non academic">
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">Photo Gallery</h2>
+            <img src="images/sc4.PNG" alt="">
+        </div>
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">SEWA</h2>
+            <img src="images/sc5.PNG" alt=""> 
+            </div>
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">Sports Corner</h2>
+            <img src="images/sc6.PNG" alt="">
+            </div>
+        </section>
+
+        <section class="widget-container" id="kindergarten">
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">YouTube</h2>
+            <video controls width="600px">
+                <source src="./images/Devagiri CMI Public School Dev Sparsh Annual Day 2023 - Highlights - VIJAY YESUDAS & SAIJU KURUP.mp4" type="video/mp4">
+            </video>
+        </div>
+            <div class="widget">
+                <h2 style="color: rgb(243, 87, 25);">School Blog</h2>
+            <img src="images/sc7.PNG" alt="">
+            </div>
+        </section>
+    </main>
+
+    
+        <footer style="background-image: url(images/sc8.jpg);">
+            <footer class="widget-container" id="general">
+                <div class="widget">
+                    <img src="images/school.PNG" alt="">
+                    <h4 style="color: #ccc;">DEVAGIRI CMI PUBLIC SCHOOL
+                        KOZHIKODE - 673008, KERALA, INDIA
+                        Affiliated to CBSE, New Delhi Code No.930695
+                        devagiricmipublicschool@yahoo.co.in
+                        https://www.devagiricmipublicschool.com</h4> 
+                
+            </div>
+                <div class="widget" id="gallery">
+                    <h3 style="color: rgb(172, 168, 167);">QUICK LINK</h3>
+                    <a href="#" style="color: #ccc;">Home</a><br>
+                    <a href="#" style="color: #ccc;">Admission</a><br>
+                    <a href="#" style="color: #ccc;">Parent Login</a><br>
+                    <a href="#" style="color: #ccc;">Gallery</a><br>
+                    <a href="#" style="color: #ccc;">Webmail Login</a><br>
+                    <a href="#" style="color: #ccc;">Fee Payment</a><br>
+                    <a href="#"></a>   
+                </div>
+                <div class="widget" id="mandatory public disclosure">
+                    <h3 style="color: rgb(214, 211, 209);">RELATED LINKS</h3>
+                    <a href="#" style="color: #ccc;">https://www.cbse.nic.in</a>
+                    <a href="#" style="color: #ccc;">http://www.cmi.org.in</a>
+                    <a href="#" style="color: #ccc;">http://www.keralastatecbsekalotsav.in/</a>
+                    <a href="#" style="color: #ccc;">http://cbseresults.nic.in/</a>
+                </div>
+                <div class="widget" id="contact">
+                    <h3 style="color: rgb(218, 216, 216);">CONTACT</h3>
+                    <h4>For Enquires : +91 7594993300</h4>
+                    <h4>School : 0495-2353582</h4>
+                    <h4>Kindergarten : 0495-2358170</h4>
+                    <h4>devagiricmipublicschool@yahoo.co.in</h4>
+                </div>
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </footer>
+    
+        <p>&copy; 2024 School Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

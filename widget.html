@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Container styles */
+        .widget-container {
+            display: flex;  /* Use flexbox to create a flexible container */
+            justify-content: space-between;  /* Space the columns evenly */
+            margin: 20px;  /* Add margin for better spacing */
+        }
+
+        /* Column styles */
+        .widget-column {
+            flex: 1;  /* Each column takes up equal space */
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;  /* Include padding and border in the total width/height */
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <div class="widget-column">
+            <h2>Widget 1</h2>
+            <p>Content for Widget 1 goes here.</p>
+        </div>
+        <div class="widget-column">
+            <h2>Widget 2</h2>
+            <p>Content for Widget 2 goes here.</p>
+        </div>
+        <div class="widget-column">
+            <h2>Widget 3</h2>
+            <p>Content for Widget 3 goes here.</p>
+        </div>
+    </div>
+</body>
+</html>

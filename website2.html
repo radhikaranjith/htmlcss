@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Responsive Website</title>
+
+
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7f5f4;
+    color: #e95803;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e46115;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-image: url(images/sc8.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode:color-burn;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+
+.widget-container {
+                display: flex;
+                /* flex-wrap: wrap; */
+                margin-top: 20px;
+            }
+            
+            .widget {
+                flex: 1 1 calc(33.33% - 20px);
+                margin: 5px;
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        position: relative;
+    }
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+    /* Responsive Styles for the Widget Container */
+  
+                .widget {
+                    flex: 1 1 calc(25% - 20px);
+                }
+            }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <img src="/images/school.PNG" alt="" height="75px" width="300px">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">ACADEMIC</a></li>
+                    <li><a href="#">NON ACADEMIC</a></li>
+                    <li><a href="#">KINDERGARTEN</a></li>
+                    <li><a href="#">GENERAL</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">MANDATORY PUBLIC DISCLOSURE</a></li>
+                    <li><a href="#">CONTACT</a></li> 
+            </ul>
+             
+            <img src="images/sc2.jpg" alt="not found" width="100%">
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <table style="padding-left: 40px; padding-block: 40px; color: rgb(5, 5, 51); ">
+                <tr style="padding-left: 100px; font-size: 30px;">
+                    <th style="padding-left: 20px;">Welcome to DCMIPS!</th>
+                    <th style="padding-left: 20px;" rowspan="2"><img src="images/sc3.PNG" alt=""></th>
+                    <th style="padding-left: 20px;">Press Release</th>  
+                </tr>
+                <tr style="font-size: 20px; ">
+                    <td style="padding-left: 20px;">Envisioned and established by the Fathers of the St. 
+                        Thomas Province of the Carmelites of Mary 
+                        Immaculate (CMI), Devagiri CMI Public School is a co- 
+                        educational English Medium School following the CBSE syllabus. This minority educational institution is run by St. Joseph’s Monastery, Devagiri, where…</td>
+                    <td style="padding-left: 20px;">According to Henry Ward Beecher, “The newspaper is a greater treasure
+                        to the people than uncounted millions of gold.” It is a far greater 
+                        treasure for the school when the students appear in the newspapers for all their involvements and great achievements. 
+                        We celebrate them as <br>
+                        they make a significant…</td>  
+                </tr>
+            </table>
+        </section>
+
+        
+            <section class="widget-container">
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">Calendar</h2>
+                <img src="images/calender.png.crdownload" alt="" width="200px" height="200px">
+            </div>
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">News & Updates</h2> 
+                </div>
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">Achievers</h2>
+                </div>
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">Notice Board</h2> 
+                </div>
+            </section>
+
+            <section class="widget-container">
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">Photo Gallery</h2>
+                <img src="images/sc4.PNG" alt="">
+            </div>
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">SEWA</h2>
+                <img src="images/sc5.PNG" alt=""> 
+                </div>
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">Sports Corner</h2>
+                <img src="images/sc6.PNG" alt="">
+                </div>
+            </section>
+
+            <section class="widget-container">
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">YouTube</h2>
+                <video controls width="700px">
+                    <source src="./images/Devagiri CMI Public School Dev Sparsh Annual Day 2023 - Highlights - VIJAY YESUDAS & SAIJU KURUP.mp4" type="video/mp4">
+                </video>
+            </div>
+                <div class="widget">
+                    <h2 style="color: rgb(243, 87, 25);">School Blog</h2>
+                <img src="images/sc7.PNG" alt="">
+                </div>
+            </section>
+
+    </main>
+
+    <footer style="background-image: url(images/sc8.jpg);">
+        <footer class="widget-container">
+            <div class="widget">
+                <img src="images/school.PNG" alt="">
+                <h4 style="color: #ccc;">DEVAGIRI CMI PUBLIC SCHOOL
+                    KOZHIKODE - 673008, KERALA, INDIA
+                    Affiliated to CBSE, New Delhi Code No.930695
+                    devagiricmipublicschool@yahoo.co.in
+                    https://www.devagiricmipublicschool.com</h4> 
+            
+        </div>
+            <div class="widget">
+                <h3 style="color: rgb(172, 168, 167);">QUICK LINK</h3>
+                <a href="#" style="color: #ccc;">Home</a><br>
+                <a href="#" style="color: #ccc;">Admission</a><br>
+                <a href="#" style="color: #ccc;">Parent Login</a><br>
+                <a href="#" style="color: #ccc;">Gallery</a><br>
+                <a href="#" style="color: #ccc;">Webmail Login</a><br>
+                <a href="#" style="color: #ccc;">Fee Payment</a><br>
+                <a href="#"></a>   
+            </div>
+            <div class="widget">
+                <h3 style="color: rgb(214, 211, 209);">RELATED LINKS</h3>
+                <a href="#" style="color: #ccc;">https://www.cbse.nic.in</a>
+                <a href="#" style="color: #ccc;">http://www.cmi.org.in</a>
+                <a href="#" style="color: #ccc;">http://www.keralastatecbsekalotsav.in/</a>
+                <a href="#" style="color: #ccc;">http://cbseresults.nic.in/</a>
+            </div>
+            <div class="widget">
+                <h3 style="color: rgb(218, 216, 216);">CONTACT</h3>
+                <h4>For Enquires : +91 7594993300</h4>
+                <h4>School : 0495-2353582</h4>
+                <h4>Kindergarten : 0495-2358170</h4>
+                <h4>devagiricmipublicschool@yahoo.co.in</h4>
+            </div>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

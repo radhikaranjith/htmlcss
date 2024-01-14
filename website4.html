@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Your Website</title>
+    <style>
+        /* Common styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+    /* Additional styles for desktops */
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    /* Additional styles for tablets */
+    nav a {
+        padding: 8px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 599px) {
+    /* Additional styles for mobile devices */
+    nav {
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Your content goes here -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
